@@ -1,10 +1,10 @@
 <div class="container">
-    <form [formGroup]="loginForm" (ngSubmit)="onLogin()" novalidate>
+    <form [formGroup]="registerForm" (ngSubmit)="onRegister()" novalidate>
         <label for="username1">Username: </label>
         <input type="text" class="form-control" formControlName="username">
         <label for="password1">Password: </label>
         <input type="password" class="form-control" formControlName="password">
         <button type="submit" class="btn btn-primary">Submit</button>
-        <p>Not a user? <a routerLink="/register">Create Account</a></p>
+        <p>Already a user? <a routerLink="/login">Login</a></p>
     </form>
 </div>
